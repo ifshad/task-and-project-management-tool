@@ -9,7 +9,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "TOEDO | Login",
+  title: "TeaDo | Login",
   description: "Enter the management universe!",
 };
 
