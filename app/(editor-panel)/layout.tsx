@@ -9,7 +9,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "TOEDO | Task Manager",
+  title: "TeaDo | Task Manager",
   description: "Manage Task & Projects easily!",
 };
 
