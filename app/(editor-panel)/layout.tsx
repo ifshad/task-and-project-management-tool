@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../globals.css";
 import { Roboto } from "next/font/google";
 import { SessionProvider } from "next-auth/react";
+import WorkSPacePanelLayout from "@/components/workspace/workspace-panel-layout";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -22,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.className} antialiased`}>
-        <SessionProvider>{children}</SessionProvider>
+        <SessionProvider>
+          <WorkSPacePanelLayout>{children}</WorkSPacePanelLayout>
+        </SessionProvider>
       </body>
     </html>
   );
